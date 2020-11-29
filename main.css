@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    font-family: "Adobe 楷体 Std R";
+}
+header{
+    background-image: url("./img/background.webp");
+    background-size: cover;
+    background-position: center;
+    height: 664px;
+    padding: 0 2rem;
+}
+.logo-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.logo-nav img{
+    width: 5%;
+    height: 5%;
+}
+nav a{
+    padding: 5px 2rem;
+    cursor: pointer;
+}
+nav a:hover{
+    font-weight: 700;
+}
+nav a.active{
+    padding: 5px calc(1rem - 1px);
+    border: 1px solid gray;
+    font-weight:700;
+}
+.header-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 52px);
+}
+.header-title h1{
+    font-size: 4rem;
+}
+.header-title p{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+.header-title div{
+    width: 300px;
+    height: 3px;
+    background-color: gray;
+}
+#home-blog{
+    background-color: white;
+    padding:100px 0;
+}
+.home-blog-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+.home-blog-title div{
+    width: 200px;
+    height: 2px;
+    background-color: gray;
+    margin-top: 20px;
+}
+.home-blog-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    margin: 0 auto;
+    grid-column-gap: 30px
+;
+}
+.home-blog-img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.home-blog-card{
+    box-shadow: 0px 0px 21px rgba(153,153,153,0.267);
+    background-color: white;
+}
+.home-blog-card:hover{
+    box-shadow: 0px 0px 50px  rgba(139,139,139,0.267);
+    cursor: pointer;
+}
+.home-blog-card-title{
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+}
+.home-blog-card-title div{
+    width: 60px;
+    height: 1px;
+    background-color: gray;
+    margin-bottom: 10px;
+}
+#home-about{
+    display: flex;
+    height: 500px;
+}
+#home-about img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.home-about-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-about-content div p{
+    height: 50px;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+.home-about-content div div{
+    width: 100px;
+    height: 2px;
+    background-color: gray;
+}
+.home-about-content > p{
+    width: 60%;
+    line-height: 2rem;
+    letter-spacing: 2px;
+}
+#home-contact{
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-contact-title{
+    height: 50px;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+.home-contact-sentence{
+    letter-spacing: 3px;
+    color: gray;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#home-contact-email{
+    width: 500px;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: black;
+    background-color: #969ea0;
+}
+#home-contact-email::placeholder{
+    opacity: 0.4;
+}
+#home-contact-email:focus{
+    color: black;
+}
+#home-contact-submit{
+    width: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#home-contact-submit:hover{
+    background-color: black;
+    color: white;
+}
+footer{
+    height: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 0 40px;
+    color: black;
+}
+@media(orientation: portrait){
+    #home-contact-email{
+        width: 80vw;
+    }
+
+    .home-blog-content{
+        grid-template-columns: 1fr;
+        grid-row-gap: 35px;
+    }
+
+    #home-about{
+        display: block;
+        height: 1000px;
+    }
+
+    #home-about img{
+        width: 100%;
+        height: 50%;
+    }
+
+    .home-about-content{
+        width: 100%;
+        height: 50%;
+    }
+
+    .home-about-content > p{
+        width: 80%;
+    }
+
+    .home-contact-sentence{
+        width: 85vw;
+        text-align: center;
+    }
+
+    .home-blog-card{
+        max-width: 500px;
+        margin:0 auto;
+    }
+}
