@@ -2,13 +2,13 @@ const blog=[
     {
         id:1,
         title:"网络爬虫技术应用",
-        href:"https://www.bilibili.com/",
+        href:"https://www.bilibili.com/video/bv1wX4y1u77M",
         image:"https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
     },
     {
         id:2,
         title:"自然语言处理技术应用",
-        href:"https://www.baidu.com/",
+        href:"https://www.bilibili.com/video/bv1HT4y1M7bj",
         image:"https://images.unsplash.com/photo-1551970634-747846a548cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
     },
     {
